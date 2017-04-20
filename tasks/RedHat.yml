@@ -66,7 +66,7 @@
     - virtualenv
 
 - name: "CentOS 7: install wv from EPEL6"
-  yum: pkg=http://dl.fedoraproject.org/pub/epel/6/x86_64/wv-1.2.7-2.el6.x86_64.rpm state=present
+  yum: pkg=http://ftp.riken.jp/Linux/dag/redhat/el6/en/x86_64/rpmforge/RPMS/wv-1.2.4-1.el6.rf.x86_64.rpm state=present
   when: ansible_distribution == 'CentOS' and ansible_distribution_major_version == '7'
 
 - name: Supervisor config dir
